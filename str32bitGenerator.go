@@ -1,4 +1,4 @@
-package functions
+package str32bit
 
 import (
 	"crypto/rand"

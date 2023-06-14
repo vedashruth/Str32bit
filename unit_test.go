@@ -1,13 +1,12 @@
-package main
+package str32bit
 
 import (
-	function "Str32bit/functions"
 	"fmt"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	randomString, err := function.GenerateRandomString()
+	randomString, err := GenerateRandomString()
 	if err != nil {
 		fmt.Println("Error generating random string:", err)
 		return
