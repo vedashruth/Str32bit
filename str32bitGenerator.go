@@ -3,7 +3,6 @@ package str32bit
 import (
 	"crypto/rand"
 	"encoding/base64"
-	"fmt"
 )
 
 func GenerateRandomString() (string, error) {
@@ -13,9 +12,6 @@ func GenerateRandomString() (string, error) {
 		return "", err
 	}
 	randomString := base64.URLEncoding.EncodeToString(randomBytes)
-	fmt.Println(randomString)
 	randomString = randomString[:12]
-	fmt.Println(randomString)
-
 	return randomString, nil
 }
